@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trends</title>
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="name">
+                <h1>Trends</h1>
+            </div>
+            <div class="search">
+                <select for="all">
+                    <option value="all">All Departments</option>
+                    <option value="Arts & Crafts">Arts & Crafts</option>
+                    <option value="Automotive">Automotive</option>
+                    <option value="Baby">Baby</option>
+                    <!-- <option value="Beauty & Personal Care">Beauty & Personal Care</option> -->
+                    <option value="Computers">Computers</option>
+                    <option value="Digital Music">Digital Music</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Home & Kithcen">Home & Kithcen</option>
+                    <option value="Men's Fashion">Men's Fashion</option>
+                    <option value="Movies & TV">Movies & TV</option>
+                </select>
+                <input type="name" placeholder="Search Trends">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li id="home" onclick="home()">Home</li>
+                    <li id="shop" onclick="shop()">Shops</li>
+                    <li id="blog" onclick="blog()">Blog</li>
+                    <li id="About" onclick="About()">About</li>
+                    <li id="Contact" onclick="Contact()">Contact</li>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </ul>
+            </div>
+        </nav>
+        <div class="home">
+            <img src="images/background project 7.jpg" alt="">
+            <!-- <div class="text">
+                <h2>Trends...</h2>
+                <p id="strong"><strong>Super Value Deals</strong></p>
+                <p id="strong-2"><strong>On All Products</strong></p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, similique.</span>
+                <button>Explore</button>
+            </div> -->
+        </div>
+        <!-- Men's Wear -->
+        <div class="men-women">
+            <div class="men">
+                <h1>Trends <strong> Electronics Gadgets</strong></h1>
+                <div id="items" id="space">
+                    <div class="item-1 item-2" id="space item-3" onclick="change2(this)">
+                        <img src="images/laptop.webp" alt="" onclick="show(this)">
+                        <h2>Laptops</h2>
+                        <div class="star" id="space">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <button id="space" onclick="addtocart2()">Add to Cart</button>
+                    </div>
+                    <div class="item-1 item-2" id="space" onclick="change(this)">
+                        <img src="images/watch project 7.jpg" alt="" id="c" onclick="show(this)" >
+                        <h2>Watches</h2>
+                        <div class="star" id="space">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <button id="space" onclick="addtocart2()">Add to Cart</button>
+                    </div>
+                    <div class="item-1" id="space" onclick="change3(this)">
+                        <img src="images/mobile project 7.webp" alt="" onclick="show(this)">
+                        <h2>Smart Mobiles</h2>
+                        <div class="star" id="space">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <button id="space" onclick="addtocart2()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Women's Wear -->
+            <div class="men">
+                <h1>Trends <strong> Accessories</strong></h1>
+                <div id="items" id="space">
+                    <div class="item-1" id="space" onclick="change4(this)">
+                        <img src="images/book project.jpg" alt="" onclick="show(this)">
+                        <h2>Books</h2>
+                        <div class="star" id="space">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <button id="space" onclick="addtocart2()">Add to Cart</button>
+                    </div>
+                    <div class="item-1  item-2" id="space" onclick="change5(this)">
+                        <img src="images/personal care.jpg" alt="" onclick="show(this)">
+                        <h2>Personal Care</h2>
+                        <div class="star" id="space">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <button id="space" onclick="addtocart2()">Add to Cart</button>
+                    </div>
+                    <div class="item-1" id="space" onclick="change6(this)">
+                        <img src="images/kitchin project 7.webp" alt="" onclick="show(this)">
+                        <h2>Kitchen, Cookware & Serveware</h2>
+                        <div class="star" id="space">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <button id="space" onclick="addtocart2()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- about us -->
+
+        <div class="about">
+
+            <div class="aboutus">
+                <h1>#KnowUs</h1>
+                <p>We provide you the best service</p>
+            </div>
+
+            <div class="me">
+                <img src="images/lap.png" alt="">
+                <div class="aboutText">
+                    <h1>Who we are ?</h1>
+                    <p>The aim of a price comparison website is to provide consumers with a convenient and efficient way to compare prices for products across different retailers or vendors.Overall, the aim of a price comparison website is to create a win-win situation for both consumers and retailers, where consumers get the best value for their money, and retailers have the opportunity to attract more customers by offering competitive prices and deals.</p>
+                </div>
+            </div>
+        </div>
+        <!-- contact us -->
+        <div class="contact">
+            <div class="middle">
+                <div class="letter">
+                    <h1>#Let's Connect</h1>
+                </div>
+                <p>To save Time and Money is our Moto. </p>
+
+            </div>
+            <div class="visit">
+                <div class="place">
+                    <h1>Visit Our Office or Contact Us Today</h1>
+                    <p>Address : Dablin Park, England, New york.</p>
+                    <p>Contact : dumiemail@gmail.com</p>
+                    <p>Number : 999999000011</p>
+                </div>
+                <div class="map">
+                    <img src="images/map.PNG" alt="">
+                </div>
+            </div>
+            <div class="connect-us">
+                <h1>Connect with us.FillForm</h1>
+                <input text="text" placeholder="Name">
+                <input text="text" placeholder="Email">
+                <input text="text" placeholder="Address">
+                <input text="text" placeholder="Mobile no">
+                <button>Submit</button>
+            </div>
+
+        </div>
+        <!-- cart -->
+        <div class="cart">
+            <img id="newImg" src="" alt="";
+            >
+            <div class="cartText">
+                <h1>Trends Offer : Trending Shop <br>
+                    Now</h1>
+                <h2>Special Price</h2>
+                <p id="change">Lenovo LOQ Gaming Laptop, NVIDIA GeForce RTX 4060, Intel 13th Gen i7-13700H, <br>15.6" FHD 144Hz Display, 32GB DDR5 RAM, 2TB PCIe SSD, Webcam, HDMI, RJ45, Backlit KB,<br> Wi-Fi 6, Windows 11 Home, Grey</p>
+                <div class="btn">
+                    <button id="button" class="btn-1" onclick="gotolink(this)" value="https://www.amazon.com/s?k=lenovo+loq+gaming+laptop+geforce+rtx+4060&crid=PAB3OZ2PYPHP&sprefix=lenovo+loq+gaming+la%2Caps%2C274&ref=nb_sb_ss_ts-doa-p_1_20" >Buy Amazon<br>109,000 rs</button>
+                    <button id="button2" class="btn-1 btn-2" onclick="gotolink2(this)" value="https://www.flipkart.com/search?q=Lenovo%20LOQ%20Gaming%20Laptop%2C%20NVIDIA%20GeForce%20RTX%204060%2C%20Intel%2013th%20Gen%20i7-13700H%2C&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off">Buy Flipcart<br>104,990 rs</button>
+                    <button id="button3" class="btn-1 btn-3" onclick="gotolink3(this)" value="https://www.croma.com/searchB?q=Lenovo%20LOQ%20Gaming%20Laptop%2C%20NVIDIA%20GeForce%20RTX%204060%2C%20Intel%2013th%20Gen%20i7-13700H%2C%3Arelevance&text=Lenovo%20LOQ%20Gaming%20Laptop%2C%20NVIDIA%20GeForce%20RTX%204060%2C%20Intel%2013th%20Gen%20i7-13700H%2C">Buy Croma<br>110,999 rs</button>
+                </div>
+                <div class="add-cart">
+                    <button onclick="addtocart2()">Add to Cart</button>
+                </div>
+                <button class="back" onclick="back()">Back</button>
+            </div>
+        </div>
+        <!--  -->
+        <div class="trend">
+            <h1>Trends <strong>Wear</strong></h1>
+        </div>
+        <div class="read">
+
+            <div class="first">
+                <div class="img-src">
+                    <img src="images/tr1.webp" alt="">
+                </div>
+                <div class="readmore">
+                    <h2>Trending Girl's Cloths</h2>
+                    <p>These are just some of the many types of girls' clothing available, each offering its own style, functionality, and versatility. </p>
+                    <button>Read more</button>
+                </div>
+            </div>
+            <div class="first">
+                <div class="img-src">
+                    <img src="images/tr3.webp" alt="">
+                </div>
+                <div class="readmore">
+                    <h2>Trending Men's Cloths</h2>
+                    <p>These are just some of the many types of men's clothing available, each offering its own style, functionality, and versatility. </p>
+                    <button>Read more</button>
+                </div>
+            </div>
+        </div>
+        <div class="cash">
+
+            <button>Cash on Delivery</button>
+            <button>Scan <i class="fa-solid fa-barcode"></i></button>
+            <button>Payment by upi</button>
+            <button>Net Banking</button>
+        </div>
+        <!-- purple line -->
+        <div class="delete">
+            <div class="purple">
+                <div class="sign-up">
+                    <h1>Sign Up for NewsLetter</h1>
+                    <p>To know our best deals.</p>
+                </div>
+                <div class="inp">
+                    <input text="Name" placeholder="Enter Name">
+                    <button onclick="signin()">Sign up</button>
+                </div>
+            </div>
+        
+        <footer>
+            <div class="trends">
+                <h2>Trends</h2>
+                <p>service</p>
+                <p>customer</p>
+                <p>satisfaction</p>
+            </div>
+            <div class="trends">
+                <h2>About us</h2>
+                <p>Address: Sant Tukaram Nagar,Pimpri<br>Pune-18.</p>
+                <p>customer</p>
+                <p>satisfaction</p>
+            </div>
+            <div class="trends">
+                <h2>Contact</h2>
+                <p>9989003229</p>
+                <p>customer</p>
+                <p>satisfaction</p>
+            </div>
+            <div class="trends">
+                <h2>Trending</h2>
+                <p>service</p>
+                <p>customer</p>
+                <p>shops</p>
+            </div>
+        </footer>
+        <div class="copyright">
+            <div class="end">
+                <p>copyright @www.E-commerce website.All copyrights are reserved</p>
+            </div>
+        </div>
+    </div>
+    <!-- add to cart -->
+    <!-- <div class="cash">
+        <div>
+            <img id="newImg-2" src="" alt="" >
+        </div>
+        <button onclick="welcome()">Cash on Delivery</button>
+        <button onclick="welcome()">Scan <i class="fa-solid fa-barcode"></i></button>
+        <button onclick="welcome()">Payment by upi</button>
+        <button onclick="welcome()">Net Banking</button>
+    </div> -->
+    <div class="similar">
+        <!-- <div class="item-1 item-3" id="space">
+            <img src="images/srt1.webp" alt="" onclick="show(this)">
+            <h2>Cotton king</h2>
+            <div class="star" id="space">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <button id="space" onclick="addCart()">Add to Cart</button>
+        </div>
+        <div class="item-1 item-3" id="space">
+            <img src="images/srt2.webp" alt="" onclick="show(this)">
+            <h2>T-shirts</h2>
+            <div class="star" id="space">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <button id="space" onclick="addCart()">Add to Cart</button>
+        </div>
+        <div class="item-1 item-3" id="space">
+            <img src="images/srt6.webp" alt="" onclick="show(this)">
+            <h2>Smart Wear</h2>
+            <div class="star" id="space">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <button id="space" onclick="addCart()">Add to Cart</button>
+        </div>-->
+
+    </div> 
+    <script src="app.js"></script>
+</body>
+
+</html>

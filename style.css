@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-color: #eeee;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+    background-color: #eeee;
+
+    box-shadow: 0px 2px 2px 2px rgb(162, 162, 162);
+
+}
+
+.search select {
+    padding: 0.7rem;
+    font-size: 1rem;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+}
+
+.search input {
+    /* border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px; */
+    padding: 0.8rem;
+    width: 27rem;
+    font-size: 1rem;
+    border: none;
+    outline:none;
+}
+
+.search i {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 1.2rem;
+    background-color: rgb(217, 158, 49);
+    padding: 0.8rem;
+    position: absolute;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.name {
+    margin-left: 2rem;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+nav ul li {
+    padding-right: 2rem;
+    color: #34495e;
+}
+
+nav ul i {
+    padding-right: 2rem;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    height: 25rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10rem;
+    position: relative;
+    bottom: 3rem;
+}
+
+.text h2 {
+    font-size: 2rem;
+}
+
+.text #strong {
+    font-size: 4rem;
+    color: rgb(5, 167, 167);
+}
+
+.text #strong-2 {
+    font-size: 4rem;
+    color: black;
+}
+
+.text button {
+    margin-top: 1rem;
+    width: 7rem;
+    color: #ffff;
+    background-color: rgb(5, 167, 167);
+    padding: 0.3rem;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.text button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid green;
+}
+
+.images {
+    margin-right: 8rem;
+    position: relative;
+    bottom: 1rem;
+}
+
+.home img {
+    width: 100%;
+}
+
+/* Mens Wear */
+.men h1 {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.men strong {
+    color: rgb(5, 167, 167);
+    font-size: 2rem;
+    margin-left: 0.8rem;
+    /*you can approach some better way */
+}
+
+#home {
+    color: rgb(2, 173, 173);
+}
+
+#items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+}
+
+.item-1 {
+    width: 18vw;
+    height: 63vh;
+    /* border: 2px solid black; */
+    margin: 2rem;
+    background-color: #ffff;
+}
+
+.item-1:hover {
+    transform: scale(1.02);
+}
+
+.item-1 img {
+    border-radius: 0.5rem;
+    width: 15vw;
+    display: block;
+    margin: 1.6rem auto;
+}
+
+.item-1 h2 {
+    margin-left: 2rem;
+    font-size: 1.4rem;
+}
+
+.item-1 .star {
+    font-size: 1rem;
+    margin-left: 2rem;
+    color: rgb(255, 149, 0);
+}
+
+.item-1 button {
+    font-size: 1rem;
+    margin-left: 2rem;
+    width: 7rem;
+    padding: 5px;
+    background-color: rgb(5, 167, 167);
+    border: none;
+    color: #ffff;
+}
+
+#space {
+    margin-top: 0.5rem;
+}
+
+.item-2 img {
+    height: 18rem;
+}
+
+/* about us */
+.about {
+    display: none;
+}
+
+.aboutus {
+    background-color: rgb(1, 1, 42);
+    color: white;
+    padding: 56px;
+    font-size: 19px;
+}
+
+.me {
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    background-color: #fff;
+    padding: 33px;
+    margin-left: 18%;
+    margin-top: 7%;
+}
+
+.me img {
+    width: 54%;
+}
+
+/* lets connect */
+.contact {
+    display: none;
+}
+
+.middle {
+    height: 13vh;
+    background-color: rgb(2, 2, 66);
+    color: #ffff;
+}
+
+.letter {
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.letter h1 {
+    margin-top: 1rem;
+}
+
+.middle p {
+    margin-left: 3rem;
+}
+
+.visit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.place {
+    /* border: 2px solid black; */
+    background-color: #ffff;
+    width: 35vw;
+    height: 40vh;
+}
+
+.place h1 {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.place p {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.map img {
+    width: 35vw;
+    height: 40.9vh;
+}
+
+.connect-us {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect-us input {
+    font-size: 20px;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    width: 30vw;
+}
+
+.connect-us button {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    width: 31.3vw;
+    padding: 0.2rem;
+    font-size: 26px;
+    color: #ffff;
+    background-color: rgb(2, 67, 67);
+}
+
+/* cart */
+
+.cart {
+    display: flex;
+    justify-content: center;
+    display: none;
+
+}
+
+.cartText {
+    padding: 22px;
+    margin-top: 22px;
+}
+
+.cartText p {
+    margin-top: 12px;
+}
+
+.cartText h2 {
+    margin-top: 11px;
+}
+.cart img{
+    width:25rem;
+    height:25rem;
+}
+.cartText .btn button {
+    width: 140px;
+    height: 57px;
+    /* background-color: rgb(255, 89, 0); */
+    color: white;
+    border: none;
+    font-size: 22px;
+    margin-inline: 11px;
+    margin-top: 22px;
+    background-color: rgb(217, 158, 49);
+}
+
+
+.add-cart button{
+    background-color: rgb(255,89,0);
+    width: 140px;
+    height: 40px;
+    /* background-color: rgb(255, 89, 0); */
+    color: white;
+    border: none;
+    font-size: 22px;
+    margin-inline: 11px;
+    margin-top: 22px;
+}
+
+.cartText .back {
+    width: 140px;
+    height: 40px;
+    background-color: rgb(4, 81, 81);
+    color: white;
+    border: none;
+    font-size: 22px;
+    margin-inline: 11px;
+    margin-top: 22px;
+    margin-top: 22px;
+}
+
+/*readmore*/
+.read {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.first {
+    /* border:2px solid black; */
+    background-color: #ffff;
+    width: 30vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    border-radius: 0.5rem;
+}
+
+.first:hover {
+    transform: scale(1.02);
+}
+
+.img-src {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first img {
+    width: 14vw;
+    height: 36vh;
+    margin-left: 1rem;
+}
+
+.readmore {
+    margin-left: 2rem;
+
+}
+
+.readmore button {
+    margin-top: 2rem;
+    width: 7rem;
+    color: #ffff;
+    background-color: rgb(5, 167, 167);
+    padding: 0.5rem;
+    border: none;
+    font-size: 1rem;
+}
+
+.readmore button:hover {
+    text-decoration: underline;
+}
+
+.trend h1 {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.trend strong {
+    color: rgb(5, 167, 167);
+    font-size: 2rem;
+    margin-left: 0.8rem;
+    /*you can approach some better way */
+}
+
+/* purple */
+.purple {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 14vh;
+    background-color: rgb(2, 2, 66);
+    color: #ffff;
+}
+
+.inp input {
+    font-size: 1rem;
+    padding: 0.6rem;
+    width: 25vw;
+}
+
+.inp button {
+    font-size: 1rem;
+    padding: 0.6rem;
+    background-color: rgb(5, 167, 167);
+}
+
+/* footer */
+footer {
+    background-color: #eeee;
+    display: flex;
+    justify-content: space-evenly;
+    height: 35vh;
+}
+
+.trends h2 {
+    font-weight: 700;
+    color: black;
+    margin-top: 2rem;
+}
+
+.trends p {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.copyright {
+    background-color: black;
+    color: #eeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+}
+
+/* cash */
+.cash{
+    display:none;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cash button{
+    background-color: white;
+    margin-top:1rem;
+    padding:1rem;
+    font-size:1.5rem;
+    font-weight:900;
+}
+/* similar */
+
+.similar{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    display:none;
+}
+.item-3{
+    margin-top:2rem;
+}
